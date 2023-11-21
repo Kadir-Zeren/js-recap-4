@@ -32,12 +32,19 @@
 // }
 // console.log("Notunuz:", not);
 
-let not = prompt("lütfen 0-100 arasinda bir not giriniz");
+// let not = prompt("lütfen 0-100 arasinda bir not giriniz");
 
-do {
+// do {
+//   not = prompt("lütfen 0-100 arasinda bir not giriniz");
+//   if (not < 0 || not > 100) {
+//     alert("Not 0'dan kücük veya 100'den büyük olamaz ");
+//   }
+// } while (not < 0 || not > 100);
+// console.log("Notunuz:", not);
+
+let not = prompt("lütfen 0-100 arasinda bir not giriniz");
+for (; not < 0 || not > 100; ) {
+  alert("Not 0'dan küçük veya 100'den büyük olamaz");
   not = prompt("lütfen 0-100 arasinda bir not giriniz");
-  if (not < 0 || not > 100) {
-    alert("Not 0'dan kücük veya 100'den büyük olamaz ");
-  }
-} while (not < 0 || not > 100);
+}
 console.log("Notunuz:", not);
